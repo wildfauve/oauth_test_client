@@ -1,1 +1,3 @@
-<%= link_to 'Authorisation Flow', auth_flow_path%>
+<p><%= link_to 'Authorisation Flow', auth_flow_path, client_type: :standard_client%></p>
+
+<p><%= link_to 'Native Authorisation Flow', auth_flow_path, client_type: :native_client %></p>

@@ -1,1 +1,6 @@
-<%= "Sub: #{@auth["sub"]}" %>
+<p><%= "Sub: #{@auth[:id_token]["sub"]}" %></p>
+<p><%= "Id Token: #{@auth[:result]["id_token"]}" %></p>
+<p><%= "Refresh Token: #{@auth[:result]["refresh_token"]}" %></p>
+
+<p><%= link_to 'Authorisation Flow', auth_flow_path, client_type: :standard_client%></p>
+<p><%= link_to 'Native Authorisation Flow', auth_flow_path, client_type: :native_client %></p>

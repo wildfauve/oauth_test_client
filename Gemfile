@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.2'
+ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
@@ -42,8 +42,8 @@ gem 'pry-rails', :group => [:development, :test]
 # gem 'foucault', '~> 0.2', git: "https://github.com/wildfauve/foucault.git"
 gem 'foucault', path: "/Users/wildfauve/ruby/foucault"
 
-# gem 'funcify', '~> 0.4', git: "https://github.com/wildfauve/funcify.git"
-gem 'funcify', path: "/Users/wildfauve/ruby/funcify"
+gem 'funcify', git: "https://github.com/wildfauve/funcify.git"
+# gem 'funcify', path: "/Users/wildfauve/ruby/funcify"
 
 gem 'dry-monads'
 
